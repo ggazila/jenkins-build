@@ -8,6 +8,6 @@ public class IndexController {
 
     @GetMapping
     public String index() {
-        return "main 6.2";
+        return "main 7";
     }
 }
