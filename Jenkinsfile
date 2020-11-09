@@ -16,6 +16,8 @@ pipeline {
                 cleanWs()
                 bat """
                 echo "Cleaned Up Workspace For Project"
+                """
+                bat """
                 mvn clean package -DskipTests=true
                 """
             }
@@ -35,6 +37,8 @@ pipeline {
             steps {
                 bat """
                 echo "Running Unit Tests"
+                """
+                bat """
                 mvn test
                 """
             }
